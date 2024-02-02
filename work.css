@@ -5,27 +5,44 @@ body{
 .home-head{
 margin-top: 11%;
 }
+
+#mydiv{
+  animation: animateSectionBackground  infinite 22s ease-in;
+}
+@keyframes animateSectionBackground {
+  00% { background-image: url(assets/banner-img.jpg); }
+  20% { background-image: url(assets/banner2.jpg); }
+  40% { background-image: url(assets/banner3.jpg); }
+  60% { background-image: url(assets/banner4.jpg); }
+  80% { background-image: url(assets/banner5.jpg); }
+}
 .h2_head{
-    font-size: 48px;
+    font-size: 232%;
     font-weight: 700;
     color: #fff;
 }
 .h6_head{
     margin-top: 5%;
-   
-    color: aquamarine;
-    font-size: 33px;
+   font-weight: 600;
+    color: #01a9ce;
+    font-size: 27.5px;
+    margin-bottom: 15%;
+    font-size: 179%;
 
 }
 .watch_tr_lg{
-    width: fit-content;
-    align-items: center;
-    display: flex;
-    border: 2px solid red;
+    /* width: fit-content; */
+    /* align-items: center; */
+    /* display: flex; */
+    border: 2px solid #e53b51;
     padding: 1% 1%;
-    justify-content: right;
-    background-color: red;
-    border-radius: 5px;
+    /* justify-content: right; */
+    background-color: #e53b51;
+    border-radius: 15px;
+    font-size: 33px;
+}
+.d-flex{
+  justify-content: space-evenly;
 }
 
 .home-btn{
@@ -35,26 +52,29 @@ margin-top: 11%;
 }
 
 .watch_tr{
-    padding-left: 50px;
-    padding-right: 20px;
-    font-size: 43px;
+    /* padding-left: 50px;
+    padding-right: 20px; */
+    font-size: 20px;
     font-weight: 500;
+    padding: 0px 40px;
+    color: #ffffff;
+    font-weight: 700;
 }
 .lg{
     padding-left: 5px;
 }
 /* Work PaGEB  */
 .work_hd{
-    font-size: 54PX;
+    font-size: 260%;
     margin-top: 3%;
     text-align: center;
-    color: rgb(73, 173, 173);
+    color: #01a9ce;
     margin-bottom: 3%;
 }
 .one_red{
     text-align: center;
     font-size: 70px;
-    border: 2px solid red;
+    border: 2px solid #e53b51;
     border-radius: 50%;
 }
 .fnd{
@@ -94,7 +114,7 @@ margin-top: 11%;
     text-align: center;
     font-size: 70px;
     font-weight: 900;
-    border: 2px solid red;
+    border: 2px solid #e53b51;
     padding: 0%;
     width: 10%;
     height: 10%;
@@ -170,4 +190,58 @@ margin-top: 11%;
     font-size: 16px;
     padding-left: 30px;
     color: #ffffff;
+  }
+
+  /* Media Query */
+  /* Home Page Text and Alignment */
+  @media only screen and (min-width:300px) and (max-width:481px) {
+    .h2_head{
+      font-size: 297%;
+      text-align: center;
+      margin-top: 12%;
+    }
+    .h6_head{
+      font-size: 170%;
+      text-align: center;
+      margin-bottom: 5%;
+    }
+    .work_hd{
+      font-size: 202%;
+    }
+    .watch_tr_lg{
+      margin-bottom: 10%;
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width:482px) and (max-width:768px) {
+    .h2_head{
+      font-size: 161%;
+    }
+    .h6_head{
+      font-size: 110%;
+    }
+  }
+  @media only screen and (min-width:769px) and (max-width:1399px) {
+    .h2_head{
+      font-size: 232%;
+    }
+    .h6_head{
+      font-size: 172%;
+    }
+  }
+  @media only screen and (min-width:1400px) and (max-width:2000px) {
+    .h2_head{
+      font-size: 260%;
+    }
+    .h6_head{
+      font-size: 191%;
+    }
+  }
+  @media only screen and (min-width:2001px) and (max-width:3000px) {
+    .h2_head{
+      font-size: 270%;
+    }
+    .h6_head{
+      font-size: 200%;
+    }
   }
