@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Search Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="SearchList.css">
+  <link rel="stylesheet" href="test1.css">
+
+
+</head>
+
+<body>
+  <section id="Srch">
+    <div class="image_main" id="mydiv">
+      <!-- Header Start here -->
+      <header>
+        <img class="chekbtn" src="assets/menu_1.svg" alt="Menu Icon" style="width: 30px; fill: #d94f5a;">
+
+        <div class="header_container">
+          <div class="connect_login_space">
+            <img src="assets/logo.png" alt="Volunteer Overseas Header Image">
+            <h4 class="header_right_part how_its_work mobile_how_it" style="font-size: 16px;"><a href="#Home">HOW IT
+                WORKS</a></h4>
+            <h4 class="header_right_part contact_us_heading" style="font-size: 16px;"><a href="#Home">CONTACT US</a>
+            </h4>
+            <div class="rightsection">
+              <h4><a href="#Srch" style="padding-left: 23px; padding-right: 23px; font-weight: 700;">Login</a></h4>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+    </div>
+  </section>
+  <div class="bgclr">
+    <section id="options_of_result">
+      <div class="table1">
+        <table>
+          <tr id="first-row">
+            <td id="first-column">
+              <h6 style="font-size: 14px; margin-left: 15px;">Cause</h6>
+            </td>
+            <td id="second-column">Counry</td>
+            <td id="third-column">Activity</td>
+            <td id="last-column"></td>
+          </tr>
+          <tr>
+
+          </tr>
+          <tr id="second-row ">
+            <td id="chechboxes" style="display: flex; padding-top: 9px; margin-left: 14px;">
+              <div class="checkbox-container">
+                <input type="checkbox" id="cb1" style="width: 14px; height: 12px;" checked>
+                <label for="cb1" style="color: #655f5f; font-weight: 100;">Volunteer </label>
+              </div>
+              <br>
+              <div class="checkbox-container">
+                <input type="checkbox" id="cb2" style="width: 14px; height: 12px;">
+                <label for="cb2" style="color: #655f5f; font-weight: 100;">Teach</label>
+              </div>
+              <br>
+              <div class="checkbox-container">
+                <input type="checkbox" id="cb3" style="width: 14px; height: 12px;">
+                <label for="cb3" style="color: #655f5f; font-weight: 100;">Intern</label>
+              </div>
+              <br>
+
+            </td>
+            <td>
+              <div class="user_name floatleft fix">
+                <input id="textbox" type="text" placeholder="Search Country">
+              </div>
+            </td>
+
+            <td><select id="select" name="Activity" id="activity" class="select_activity" style="color: #655f5f;">
+                <option value="Animal Conversion" style="color: #655f5f;">Animal Conversion</option>
+                <option value="Animal Conversion" style="color: #655f5f;">Animal Conversion</option>
+                <option value="Animal Conversion" style="color: #655f5f;">Animal Conversion</option>
+              </select></td>
+            <!-- Button For Pc -->
+            <td>
+              <button id="full-button" class="btn btn-primary mrfltr_pc" type="button" data-toggle="collapse"
+                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><span
+                  id="text">More filter</span>
+                <span class="badge" id="mobile_badge">4</span>
+              </button>
+              <!-- View For Tab  -->
+              <button id="tab" class="fill-tab btn btn-primary" type="button" data-toggle="collapse"
+              data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><span id="text">...</span>
+                <span class="badge" style="background-color: #4cb1c3;">4</span>
+              </button>
+            </td>
+          </tr>
+        </table>
+        <!-- Data Div For Pc View -->
+        <div class="collapse pccollpas" id="collapseExample">
+          <div class="card card-body popupforpc pccc" id="tab_btn_flt">
+            <div class="container tabcollaps" id="tab_cnt">
+              <div class="row mt-4 ">
+                <div class="col">
+                  <!-- 1 of 3 -->
+                  <div class="row">
+                    <div class="col-sm-8 start_dt ">Start Date (range)</div>
+                    <div class="col-sm-4 reset">Reset</div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-4"><Select required class="month_select">
+                        <option value="" disabled selected>month</option>
+                        <option value="january">january</option>
+                        <option value="february">february</option>
+                        <option value="march">march</option>
+                        <option value="april">april</option>
+                      </Select></div>
+                    <div class="col-3"><Select required class="date_select">
+                        <option value="dd" disabled selected>dd</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </Select></div>
+                    <div class="col-4"><Select required class="month_select">
+                        <option value="yyyy" disabled selected>yyyy</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                      </Select></div>
+                    <div class="desh">-
+                    </div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-4 "><Select required class="month_select">
+                        <option value="" disabled selected>month</option>
+                        <option value="january">january</option>
+                        <option value="february">february</option>
+                        <option value="march">march</option>
+                        <option value="april">april</option>
+                      </Select></div>
+                    <div class="col-3"><Select required class="date_select">
+                        <option value="dd" disabled selected>dd</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </Select></div>
+                    <div class="col-4"><Select required class="month_select">
+                        <option value="yyyy" disabled selected>yyyy</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                      </Select></div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <!-- 2 of 3 -->
+                  <div class="row">
+                    <div class="col-sm-8 start_dt durt_mar ">Duration</div>
+                    <div class="col-sm-4 reset rst_mar">Reset</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8 start_dt durt_mar ">
+
+
+                      <!-- Weeks and Slider Code Goes Here -->
+
+
+                      <div class="wrapper">
+                        <div class="price-input">
+                          <div class="field">
+                            <input type="number" class="input-min" value="1">
+                            <span>week</span>
+                          </div>
+                          <div class="separator">-</div>
+                          <div class="field">
+                            <span>weeks</span>
+                            <input type="number" class="input-max" value="100">
+                          </div>
+                        </div>
+                        <div class="slider">
+                          <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                          <input type="range" class="range-min" min="" max="100" value="25" step="1">
+                          <input type="range" class="range-max" min="0" max="100" value="75" step="1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <!-- Third Colum Goes here -->
+                  <div class="row">
+                    <div class="col-sm-8 start_dt durt_mar ">Minimum Age</div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col"><Select required class="month_select" id="min_age">
+                        <option value="--" disabled selected>--</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                      </Select></div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4 ">
+                <div class="col see_btn">
+                  <button type="button" id="see_result_btn">
+                    See results
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Data View For Tab Layout -->
+          <div class="collapse tabcc" id="collapseExample" >
+            <div class="card card-body  " id="tab_btn_flt">
+              <div class="container " id="tab_cnt">
+                <div class="row mt-4 ">
+                  <div class="col-12">
+                    <!-- 1 of 3 -->
+                    <div class="row ">
+                      <div class="col-sm-8 start_dt ">Start Date (range)</div>
+                      <div class="col-sm-4 reset">Reset</div>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col-4"><Select required class="month_select">
+                          <option value="" disabled selected>month</option>
+                          <option value="january">january</option>
+                          <option value="february">february</option>
+                          <option value="march">march</option>
+                          <option value="april">april</option>
+                        </Select></div>
+                      <div class="col-3"><Select required class="date_select">
+                          <option value="dd" disabled selected>dd</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </Select></div>
+                      <div class="col-4"><Select required class="month_select">
+                          <option value="yyyy" disabled selected>yyyy</option>
+                          <option value="2022">2022</option>
+                          <option value="2023">2023</option>
+                          <option value="2024">2024</option>
+                          <option value="2025">2025</option>
+                        </Select></div>
+                      <div class="desh">-
+                      </div>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col-4 "><Select required class="month_select">
+                          <option value="" disabled selected>month</option>
+                          <option value="january">january</option>
+                          <option value="february">february</option>
+                          <option value="march">march</option>
+                          <option value="april">april</option>
+                        </Select></div>
+                      <div class="col-3"><Select required class="date_select">
+                          <option value="dd" disabled selected>dd</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </Select></div>
+                      <div class="col-4"><Select required class="month_select">
+                          <option value="yyyy" disabled selected>yyyy</option>
+                          <option value="2022">2022</option>
+                          <option value="2023">2023</option>
+                          <option value="2024">2024</option>
+                          <option value="2025">2025</option>
+                        </Select></div>
+                    </div>
+                  </div>
+  
+                  <div class="col-12">
+                    <!-- 2 of 3 -->
+                    <div class="row">
+                      <div class="col-sm-8 start_dt durt_mar ">Duration</div>
+                      <div class="col-sm-4 reset rst_mar">Reset</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-8 start_dt durt_mar ">
+  
+  
+                        <!-- Weeks and Slider Code Goes Here -->
+  
+  
+                        <div class="wrapper">
+                          <div class="price-input">
+                            <div class="field">
+                              <input type="number" class="input-min" value="1">
+                              <span>week</span>
+                            </div>
+                            <div class="separator">-</div>
+                            <div class="field">
+                              <span>weeks</span>
+                              <input type="number" class="input-max" value="100">
+                            </div>
+                          </div>
+                          <div class="slider">
+                            <div class="progress"></div>
+                          </div>
+                          <div class="range-input">
+                            <input type="range" class="range-min" min="" max="100" value="25" step="1">
+                            <input type="range" class="range-max" min="0" max="100" value="75" step="1">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <!-- Third Colum Goes here -->
+                    <div class="row">
+                      <div class="col-sm-8 start_dt durt_mar ">Minimum Age</div>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col"><Select required class="month_select" id="min_age">
+                          <option value="--" disabled selected>--</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                        </Select></div>
+  
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4 ">
+                  <div class="col see_btn">
+                    <button type="button" id="see_result_btn">
+                      See results
+                    </button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+
+          <!-- View For Mobile  -->
+         
+    </section>
+    <div class="mob_cont">
+      <div class="for_brdr">
+        <div class="text_res">
+          <h5>Volunteer <span style="color: #9a9c9e; font-weight: 400;">in</span> Cambodia <span
+              style="color: #9a9c9e; font-weight: 400;">for</span> Animal Conservation</h5>
+        </div>
+        <div class="editicon"><img src="assets/edit-icon.svg" alt="edit Icon" style="height: 35px;"></div>
+        <div style="position: relative; display: inline-block; margin-right: 4%;">
+          <button class="more_flt_btn btn btn-primary " id="moreflt_mob" type="button"  data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            More Filter
+          </button>
+          <span class="mobile_badge">4</span>
+        </div>
+      </div>
+      <!-- Data View For Mobile -->
+    </div>
+    <div class="collapse coll_mob" id="collapseExample" >
+      <div class="card card-body coll_mob">
+        <div class="container">
+          <div class="row mt-4 ">
+            <div class="col-12 crossic">
+              <img src="assets/close-black.svg" alt="">
+            </div>
+          </div>
+          <div class="row mt-4 ">
+            <div class="col-12">
+              <!-- 1 of 3 -->
+              <div class="row ">
+                <div class="col start_dt ">Start Date (range)</div>
+                <div class="col reset">Reset</div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-4"><Select required class="month_select">
+                    <option value="" disabled selected>month</option>
+                    <option value="january">january</option>
+                    <option value="february">february</option>
+                    <option value="march">march</option>
+                    <option value="april">april</option>
+                  </Select></div>
+                <div class="col-3"><Select required class="date_select">
+                    <option value="dd" disabled selected>dd</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </Select></div>
+                <div class="col-4"><Select required class="month_select">
+                    <option value="yyyy" disabled selected>yyyy</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                  </Select></div>
+               
+              </div>
+              <div class="row mt-4">
+                <div class="col-4 "><Select required class="month_select">
+                    <option value="" disabled selected>month</option>
+                    <option value="january">january</option>
+                    <option value="february">february</option>
+                    <option value="march">march</option>
+                    <option value="april">april</option>
+                  </Select></div>
+                <div class="col-3"><Select required class="date_select">
+                    <option value="dd" disabled selected>dd</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </Select></div>
+                <div class="col-4"><Select required class="month_select">
+                    <option value="yyyy" disabled selected>yyyy</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                  </Select></div>
+              </div>
+            </div>
+
+            <div class="col-12 mar_tp_row2">
+              <!-- 2 of 3 -->
+              <div class="row">
+                <div class="col start_dt durt_mar ">Duration</div>
+                <div class="col reset rst_mar">Reset</div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8 start_dt durt_mar ">
+
+
+                  <!-- Weeks and Slider Code Goes Here -->
+
+
+                  <div class="wrapper">
+                    <div class="price-input">
+                      <div class="field">
+                        <input type="number" class="input-min" value="1">
+                        <span>week</span>
+                      </div>
+                      <div class="separator">-</div>
+                      <div class="field">
+                        <span>weeks</span>
+                        <input type="number" class="input-max" value="100">
+                      </div>
+                    </div>
+                    <div class="slider">
+                      <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                      <input type="range" class="range-min" min="" max="100" value="25" step="1">
+                      <input type="range" class="range-max" min="0" max="100" value="75" step="1">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12  mar_tp_row3">
+              <!-- Third Colum Goes here -->
+              <div class="row">
+                <div class="col-sm-8 min_age">Minimum Age</div>
+              </div>
+              <div class="row mt-4">
+                <div class="col"><Select required class="month_select" id="min_age">
+                    <option value="--" disabled selected>--</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                  </Select></div>
+
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4 ">
+            <div class="col see_btn">
+              <button type="button" id="see_result_btn">
+                See results
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+
+  <Section id="main_content_search">
+    <div class="srch_result">
+      <div class="result329">
+        <h6 id="mob_329" style="font-size: 16px; margin-left: -4px; color: #655f5f; font-weight: 500;">329 Results</h6>
+      </div>
+      <div class="srt_rela">
+        <div class="sortby">
+          <h6 style="color: #655f5f; font-weight: 500;">Sort by:</h6>
+          <div class="relavancy" style="margin-left: 1px;">
+            <select name="resultpage" id="resultpage"
+              style="font-size: 14px; font-weight: 200; margin-bottom: -2px; color: #655f5f; outline: none; margin-left: 2px; padding: 2px; font-weight: 500;">
+              <option value="relavance">Relavancy</option>
+              <option value="time">Time</option>
+              <option value="last-updates">Last Updates</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <section id="Image_conatiner">
+    <div class="grid-container">
+      <!-- Image One Starts Here -->
+      <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 class="lw_volunteer"
+                      style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 class="lw_volunteer"
+                      style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 class="lw_volunteer"
+                      style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- image 2 -->
+      <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 class="lw_volunteer"
+                      style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 class="lw_volunteer"
+                      style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 class="lw_volunteer"
+                      style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!-- Image 3 -->
+      <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Image 4 -->
+      <div id="carouselExampleControls4" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls4" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Image 5 -->
+      <div id="carouselExampleControls5" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls5" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Image 6 -->
+      <div id="carouselExampleControls6" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls6" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Image 7 -->
+      <div id="carouselExampleControls7" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls7" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Image 8 -->
+      <div id="carouselExampleControls8" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls8" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Image 9 -->
+      <div id="carouselExampleControls9" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls9" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Image10 -->
+      <div id="carouselExampleControls10" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls10" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Image 11 -->
+      <div id="carouselExampleControls11" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls11" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Image 12 -->
+      <div id="carouselExampleControls12" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls12" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Image 13 -->
+      <div id="carouselExampleControls13" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls13" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Image 14 -->
+      <div id="carouselExampleControls14" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls14" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- image 15 -->
+      <div id="carouselExampleControls15" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Medical Volunteer</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo02.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="grid-item">
+              <div class="bottom_image_line">
+                <div class="image_with_text">
+                  <img class="img_size" src="assets/photo03.jpg" alt="photo01">
+                  <div class="top-left">
+                    <h6>Doloro sit</h6>
+                  </div>
+                </div>
+                <div class="bottom_design">
+                  <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+                  <div class="logo-and-text">
+                    <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+                    <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers
+                    </h6>
+                  </div>
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                    duration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls15" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+
+
+
+    </div>
+  </section>
+
+  <section id="numbers">
+    <div class="num_container">
+      <div class="num1 num2">1</div>
+      <div class="num1 NM3">2</div>
+      <div class="num1 NM3">3</div>
+      <div class="num1 NM3">...</div>
+      <div class="num1 NM3">12</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer_main">
+      <div class="logo_fot">
+        <img src="assets/logo_1.png" alt="Footer Logo">
+      </div>
+      <div class="text_fot">
+        <div class="faq">
+          <h4>faq</h4>
+        </div>
+        <div class="contact_us_fot">
+          <h4>Contact Us</h4>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="rangeRover/dist/jquery.rangerover.min.js"></script>
+  <link rel="stylesheet" href="rangeRover/dist/jquery.rangerover.min.css">
+  <script src="script.js"></script>
+</body>
+
+</html>

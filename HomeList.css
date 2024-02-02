@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+/* Background image */
+.image_main{
+background-image: url(assets/banner-img.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: #464646;
+opacity: 1;
+box-shadow: inset   0px 0px 550px 90px rgb(10, 8, 8);
+}
+/* Seeting for Bg */
+.imageupper{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image_bng{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image_sh{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content_bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#bgd_image{
+  width: 100vw;
+  height: 80vh;
+}
+#image_bng_shadow{
+  width: 100vw;
+  height: 80vh;
+}
+
+/* Header */
+.header_container img{
+height: 40px;
+margin-top: 20px;
+margin-right: 64px;
+
+}
+.how_its_work{
+    margin-right: 20px;
+}
+.rightsection h4 a{
+    display: inline;
+    padding: 8px;
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+}
+.rightsection h4 a:hover{
+    text-decoration: none;
+    color: #464646;
+    
+    background-color: #a0f9db;
+}
+.header_container{
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom:1px solid #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+.connect_login_space{
+    align-items: center;
+    flex: 1;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+}
+.rightsection{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.header_right_part a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.chekbtn{
+    float: right;
+    margin-top: 50px;
+    line-height: 135px;
+    margin-right: 12px;
+    cursor: pointer;
+    display: none;
+}
+.mobile_menu_set>h4{
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+.mobilemenusetup{
+    display: none;
+}
+@media only screen and (max-width: 487px){
+    .rightsection h4{
+        display: none;
+    }
+    .header_right_part{
+        display: none;
+    }
+    .mobile_menu_set>h4{
+        display: block;
+    }
+    .chekbtn{
+        display: block;
+        width: 12px;
+        margin-left: 5px;
+    }
+    .mobilemenusetup{
+        display: block;
+       text-align: center;
+    }
+    img .chekbtn{
+        width: 100px;
+    }
+  }
+@keyframes animateSectionBackground {
+    00% { background-image: url(assets/banner-img.jpg); }
+    20% { background-image: url(assets/banner2.jpg); }
+    40% { background-image: url(assets/banner3.jpg); }
+    60% { background-image: url(assets/banner4.jpg); }
+    80% { background-image: url(assets/banner5.jpg); }
+  }
+
+   
+ 
+
+
+
+
+
+
