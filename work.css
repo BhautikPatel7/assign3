@@ -371,6 +371,28 @@ ol li span {
       margin-bottom: 10%;
       width: 100%;
     }
+    .lap_work_ipad{
+      display: none;
+    }
+    .lap_workIm{
+      display: none;
+    }
+    .line1_img{
+      display: none;
+     }
+     .lineimg2{
+       display: none;
+     }
+     .workline3{
+       display: none;
+     }
+     .imf{
+      display: none;
+     }
+     .handimageipad{
+      display: none;
+     }
+  
   }
   /* --------------------------------------------------------------------------------------- */
   @media only screen and (min-width:482px) and (max-width:768px) {
@@ -422,11 +444,96 @@ ol li span {
   margin-left: -17%;
   width: 67%;
 }
+.applynow {
+  margin-top: -1%;
+  margin-left: 1%;
+  font-size: 25px;
+  color: #d84a55;
+  font-weight: 800;
+}
 .fnd{
   font-size: 25px;
 }
 #work2{
   margin-top: 30%;
+}
+.WORKIMG2> img {
+  margin-left: -75%;
+  width: 135%;
+  margin-top: 30%;
+}
+.w3e{
+  width: 150%;
+  margin-top: -40%;
+}
+#work3 {
+  margin-top: 42%;
+}
+.cont>h3 {
+  margin-top: 5%;
+  color: #9a9d9e;
+  font-size: 82%;
+  margin-left: -20%;
+}
+ol li {
+  font-size: 76%;
+  color: #9a9d9e;
+  font-weight: 400;
+}
+.intra {
+  font-style: italic;
+  margin-top: 5%;
+  margin-left: -3%;
+  padding: 1%;
+  font-size: 43%;
+  color: #9a9d9e;
+}
+ol li span {
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  line-height: 14px;
+  margin-right: 1%;
+  background-color: #43aabf;
+}
+.lap_workIm{
+  display: none;
+}
+.ipad_trd{
+  margin-left: -245%;
+}
+.third_maintext{
+  margin-left: -39%;
+}
+.fd{
+  margin-left: -32%;
+}
+#work4{
+  margin-top: 41%;
+}
+.WORKIMG2> img {
+  margin-left: -41%;
+  width: 140%;
+  margin-top: 35%;
+}
+.fh{
+  width: 58% !important;
+}
+.chek_tb{
+  font-size: 12px;
+}
+.talk_abt {
+  color: #43aabf;
+  margin-left: -20%;
+  font-size: 15px;
+  font-weight: 800;
+  margin-top: 10%;
+}
+.bgn_jrn {
+  font-size: 11px;
+}
+.main_cnt_mobile{
+  display: none;
 }
   }
   /* ---------------------------------------------------------------------------------- */
@@ -494,6 +601,12 @@ ol li span {
 .handimageiphone,.handimageipad{
   display: none;
 }
+.lap_work_ipad{
+  display: none;
+}
+.main_cnt_mobile{
+  display: none;
+}
   }
   /* -------------------------------------------------------------------------------------------------------------- */
   @media only screen and (min-width:769px) and (max-width:1399px) {
@@ -517,7 +630,14 @@ ol li span {
     .handimageiphone,.handimageipad{
       display: none;
     }
+    .lap_work_ipad{
+      display: none;
+    }
+    .main_cnt_mobile{
+      display: none;
+    }
   }
+ 
   /* ------------------------------------------------------------------------------------------------------ */
   @media only screen and (min-width:1400px) and (max-width:2000px) {
     .h2_head{
@@ -532,6 +652,12 @@ ol li span {
     #work1_ipad{
       display: none;
     }
+    .lap_work_ipad{
+      display: none;
+    }
+    .main_cnt_mobile{
+      display: none;
+    }
   }
   /* ---------------------------------------------------------------------------------------------------- */
   @media only screen and (min-width:2001px) and (max-width:3000px) {
@@ -544,14 +670,25 @@ ol li span {
     .handimageiphone,.handimageipad{
       display: none;
     }
+    .lap_work_ipad{
+      display: none;
+    }
+    .main_cnt_mobile{
+      display: none;
+    }
   }
   /* ------------------------------------------------------------------------------ */
   @media only screen and (min-width:3000px) and (max-width:9999px) {
     .handimageiphone,.handimageipad{
       display: none;
     }
+    .lap_work_ipad{
+      display: none;
+    }
+    .main_cnt_mobile{
+      display: none;
+    }
   }
-
   /* Solving X Scrooll */
   .row {
     --bs-gutter-x: 0rem;
